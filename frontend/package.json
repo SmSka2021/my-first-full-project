@@ -1,0 +1,54 @@
+{  
+ "name": "next-ts-tailwind",
+"version": "0.1.0",
+"private": true,
+
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build"   
+  },
+  "devDependencies": { 
+   "@types/node": "^20.3.1",
+  "@types/react": "^18.2.14",
+  "chokidar-cli": "^3.0.0",
+  "concurrently": "^8.2.0",
+  "@typescript-eslint/eslint-plugin": "^5.60.1",
+  "@typescript-eslint/parser": "^5.60.1",
+  "eslint-config-airbnb": "^19.0.4",
+  "eslint-import-resolver-typescript": "^3.5.5",
+  "eslint-plugin-import": "^2.25.3",
+  "eslint-plugin-jsx-a11y": "^6.5.1",
+  "eslint-plugin-react": "^7.28.0",
+  "eslint-plugin-react-hooks": "^4.3.0", 
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "@headlessui/react": "^1.7.15",
+    "@heroicons/react": "^2.0.18",
+    "@hookform/resolvers": "^3.1.1",
+    "@reduxjs/toolkit": "^1.9.5",   
+    "localstorage-slim": "^2.4.0",  
+    "postcss-import": "^12.0.0",    
+    "react-redux": "^8.1.1",
+    "redux": "^4.2.1",
+    "redux-thunk": "^2.4.2",   
+    "tw-elements": "^1.0.0-beta2",
+    "tw-elements-react": "^1.0.0-alpha1",
+    "yup": "^1.2.0",  
+    "@types/node": "^20.3.1",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "18.2.6",
+    "autoprefixer": "^9",
+    "axios": "^1.4.0",
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-next": "13.4.7",
+    "next": "13.4.7",
+    "postcss": "^7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.1",
+    "typescript": "^5.1.6",
+    "tailwindcss": "^3.3.2"
+  }
+}

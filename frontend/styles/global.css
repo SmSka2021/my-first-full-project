@@ -1,0 +1,282 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hide-scroll-x::-webkit-scrollbar {
+  width: 0px;
+}
+
+body {
+  @apply text-xs  font-sans font-normal;
+}
+.btn {
+  @apply py-[7px] px-[20px] font-medium rounded-lg cursor-pointer;
+}
+.btn-blue {
+  @apply bg-blue-200 text-blue-950;
+}
+
+.btn-blue:hover {
+  @apply bg-blue-300;
+}
+.btn-blue:disabled {
+  @apply bg-gray-200 cursor-not-allowed;
+}
+
+.btn-empty {
+  @apply rounded-none bg-inherit;
+}
+.link {
+  @apply cursor-pointer text-xs text-green-700 hover:text-blue-700;
+}
+.nav-link {
+  @apply hover:text-indigo-800 text-sm;
+}
+main {
+  min-height: calc(100vh - 171px);
+}
+.main-auth {
+  min-height: calc(100vh - 112px);
+}
+.wrapper-mess {
+  @apply flex w-full  h-full  fixed left-0 top-0  justify-center items-center z-10;
+}
+.wrapper {
+  @apply fixed  top-0  left-0  w-full  h-full flex justify-center items-center bg-gray-500/50 z-20;
+}
+.input-form {
+  @apply w-64 p-3  border-2 border-solid outline-gray-700 text-sm focus:outline-none focus:bg-[#fafafa];
+}
+.input-form-todo {
+  @apply px-[10px] rounded border-0 py-[10px] h-[38px] text-[12px] focus:outline-none focus:bg-[#fafafa];
+}
+.reg-head {
+  @apply relative p-2 box-border text-lg text-center text-white shadow w-80 bg-[#3f7eb6] font-bold;
+}
+.btn-light {
+  @apply inline-block rounded bg-neutral-50 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-800 shadow-[0_4px_9px_-4px_#cbcbcb] transition duration-150 ease-in-out hover:bg-blue-100;
+  @apply inline-block rounded bg-neutral-50 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-neutral-800 shadow-[0_4px_9px_-4px_#cbcbcb] transition duration-150 ease-in-out hover:bg-blue-100;
+}
+.fone-card {
+  @apply flex justify-between h-full break-words rounded-lg hyphens-manual self-stretch relative p-6 shadow-xl w-[350px] hover:shadow-2xl bg-gray-50 border-gray-300 border;
+}
+.card-user {
+  @apply flex flex-col h-full break-words rounded-lg hyphens-manual self-stretch relative p-4 shadow-xl w-[200px] hover:shadow-2xl bg-gray-100 border-gray-300 border justify-between items-center gap-[7px];
+}
+.fone-img {
+  @apply bg-no-repeat bg-center bg-cover;
+  background-image: url("../public/assets/img/fon2.jpg");
+}
+
+.fone-img-todo {
+  @apply bg-no-repeat bg-center bg-cover flex flex-col h-full break-words rounded-lg hyphens-manual self-stretch relative p-6 shadow-xl w-[250px] hover:shadow-2xl bg-gray-50 border-gray-300 border justify-between;
+  background-image: url("../public/assets/img/fon1.jpg");
+}
+
+.btn-friend {
+  @apply inline-block rounded px-[10px] py-[5px] text-xs font-medium  text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out;
+}
+
+.delete-btn:hover path {
+  fill: red;
+}
+
+.fone-block-hello {
+  @apply bg-no-repeat bg-center bg-cover;
+  background-image: url("../public/assets/img/fon6.jpg");
+}
+.fone-auth {
+  @apply bg-no-repeat bg-center bg-cover;
+  background-image: url("../public/assets/img/fon2.jpg");
+}
+.block-slider-text {
+  @apply font-medium text-base antialiased mb-[10px] font-sans text-start text-stone-950 flex;
+}
+
+.form_control {
+  @apply w-[90%] bg-[#f2f6f8]  rounded-xl  border-none shadow h-[35px]  py-[0.5px] px-[35px] text-[#212529] text-sm my-[15px] mx-auto;
+}
+
+.btn-start {
+  @apply inline-block font-bold bg-success px-6 py-3 text-xs uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#14a44d] transition duration-150 ease-in-out hover:bg-success-600 hover:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.3),0_4px_18px_0_rgba(20,164,77,0.2)] focus:bg-success-600 focus:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.3),0_4px_18px_0_rgba(20,164,77,0.2)] focus:outline-none focus:ring-0 active:bg-success-700 active:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.3),0_4px_18px_0_rgba(20,164,77,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(20,164,77,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.2),0_4px_18px_0_rgba(20,164,77,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.2),0_4px_18px_0_rgba(20,164,77,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(20,164,77,0.2),0_4px_18px_0_rgba(20,164,77,0.1)] rounded-lg;
+}
+.ag_courses_item {
+  -ms-flex-preferred-size: calc(33.33333% - 30px);
+  flex-basis: calc(33.33333% - 30px);
+  margin: 0 15px 20px;
+  overflow: hidden;
+  border-radius: 28px;
+}
+
+.ag_courses_item_link:hover,
+.ag_courses_item_link:hover .ag_courses_item_date {
+  text-decoration: none;
+  @apply text-white;
+}
+
+.ag_courses_item_link:hover .ag_courses_item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+
+.ag_courses_item_title {
+  @apply mb-[10px] font-bold text-[16px] text-white z-20 relative;
+  overflow: hidden;
+  line-height: 20px;
+  min-height: 35px;
+}
+
+.ag_courses_item_date_box {
+  @apply text-[14px] text-white z-10 relative;
+}
+
+.ag_courses_item_date {
+  @apply font-bold text-[#f9b234];
+  transition: color 0.5s ease;
+}
+
+.ag_courses_item_bg {
+  @apply h-[128px] w-[128px]  bg-[#cd3e94] z-10  absolute -top-[75px] -right-[75px] rounded-full;
+  transition: all 0.5s ease;
+}
+
+.ag_courses_item:nth-child(2n) .ag_courses_item_bg {
+  @apply bg-[#f9b234];
+}
+
+.ag_courses_item:nth-child(3n) .ag_courses_item_bg {
+  @apply bg-[#952aff];
+}
+
+.ag_courses_item:nth-child(4n) .ag_courses_item_bg {
+  @apply bg-[#3ecd5e];
+}
+
+.ag_courses_item:nth-child(5n) .ag_courses_item_bg {
+  @apply bg-[#4c49ea];
+}
+@media only screen and (max-width: 1050px) {
+  .add-todo {
+    @apply flex-col;
+  }
+  .add-todo-wrap {
+    @apply w-[50%] mx-auto mb-4 pb-5;
+  }
+  .title-add-todo {
+    @apply self-center font-bold mb-4 text-[20px];
+  }
+  .btn-add-todo {
+    @apply self-center mt-3;
+  }
+  .input-form-todo {
+    @apply w-[80%] mx-auto;
+  }
+  .wrap-inp-todo {
+    @apply w-full flex flex-col justify-center;
+  }
+  .err-todo {
+    @apply ml-[40px];
+  }
+}
+@media only screen and (max-width: 979px) {
+  .ag_courses_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
+
+  .ag_courses_item_title {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag_format_container {
+    width: 96%;
+  }
+
+  .add-todo-wrap {
+    @apply w-[70%];
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .ag_courses_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+
+  .ag_courses_item_title {
+    min-height: 72px;
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  .ag_courses_item_link {
+    padding: 30px;
+    text-align: center;
+  }
+  .title-start {
+    font-size: 30px;
+    margin-left: 0;
+  }
+  .add-todo-wrap {
+    @apply w-[80%];
+  }
+}
+
+.svg {
+  @apply w-[35%];
+}
+
+.envelope {
+  animation: float 2s ease-in-out infinite;
+}
+
+.star1,
+.star2,
+.star3,
+.star4,
+.star5,
+.star6 {
+  animation: blink 1s ease-in-out infinite;
+}
+.star2 {
+  animation-delay: 100ms;
+}
+.star3 {
+  animation-delay: 500ms;
+}
+.star4 {
+  animation-delay: 700ms;
+}
+.star5 {
+  animation-delay: 300ms;
+}
+.star6 {
+  animation-delay: 200ms;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
