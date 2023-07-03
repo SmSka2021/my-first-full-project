@@ -4,9 +4,12 @@ REST API with NestJS, Docker and MongoDB TypeScript
 
 ## How to use it?
 
-cd backend
+```bash
+cd backendUser
 npm install
 docker-compose up --build -d
+```
+
 
 ## Notes
 
