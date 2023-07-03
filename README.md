@@ -6,7 +6,7 @@ frontend: TypeScript, React, NextJS, Redux, Tailwind
 ## How to use it?
 
 ```bash
-cd backend
+cd backendUser
 npm install
 docker-compose up --build -d
 
