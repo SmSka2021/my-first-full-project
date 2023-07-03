@@ -18,11 +18,6 @@ docker-compose up --build -d
 • Авторизованный пользователь управляет своим списком добрых дел (CRUD);
 • Авторизованный пользователь может добавлять людей по общедоступному уникальному идентификатору (NickName) в друзья и смотреть их список добрых дел;
 
-```bash
-APP_PORT=3001
-MONGODB_URL=mongodb://mongodb:27017/UsersGoodWork
-```
-
 If you directly using your working machine and MongoDB installed on your machine
 
 ```bash
